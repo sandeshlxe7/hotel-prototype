@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandesh Hotel – Luxury Redefined</title>
+  <meta name="description" content="Sandesh Hotel offers world-class luxury accommodations, fine dining, and premium amenities. Book your stay and experience elegance like never before." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">✦</span>
+        <div class="logo-text">
+          <span class="logo-main">SANDESH</span>
+          <span class="logo-sub">HOTEL & RESORT</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#rooms" class="nav-link">Rooms</a></li>
+        <li><a href="#amenities" class="nav-link">Amenities</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#booking" class="btn-book-nav">Book Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="hero-bg.jpg" alt="Sandesh Hotel" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tagline">Welcome to</p>
+      <h1 class="hero-title">SANDESH<br/><em>Hotel & Resort</em></h1>
+      <p class="hero-subtitle">Where Luxury Meets Timeless Elegance</p>
+      <div class="hero-divider"><span>✦</span></div>
+      <div class="hero-actions">
+        <a href="#booking" class="btn-primary" id="heroBookBtn">Reserve Your Stay</a>
+        <a href="#rooms" class="btn-outline" id="heroExploreBtn">Explore Rooms</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+    <!-- Stats Bar -->
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number">150+</span>
+        <span class="stat-label">Luxury Rooms</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">5★</span>
+        <span class="stat-label">Rating</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">20+</span>
+        <span class="stat-label">Years of Excellence</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">10k+</span>
+        <span class="stat-label">Happy Guests</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== QUICK BOOKING ========== -->
+  <section id="booking" class="booking-section">
+    <div class="booking-container">
+      <h2 class="booking-title"><span class="gold">Quick</span> Reservation</h2>
+      <form class="booking-form" id="bookingForm">
+        <div class="form-group">
+          <label for="checkIn">Check-In</label>
+          <input type="date" id="checkIn" name="checkIn" required />
+        </div>
+        <div class="form-group">
+          <label for="checkOut">Check-Out</label>
+          <input type="date" id="checkOut" name="checkOut" required />
+        </div>
+        <div class="form-group">
+          <label for="roomType">Room Type</label>
+          <select id="roomType" name="roomType">
+            <option value="">Select Room</option>
+            <option value="standard">Standard Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="suite">Executive Suite</option>
+            <option value="presidential">Presidential Suite</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="guests">Guests</label>
+          <select id="guests" name="guests">
+            <option value="1">1 Guest</option>
+            <option value="2" selected>2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary btn-book-submit" id="checkAvailBtn">Check Availability</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="about-img-main">
+            <img src="room-suite.png" alt="Sandesh Hotel Suite" />
+          </div>
+          <div class="about-img-badge">
+            <span class="badge-number">20</span>
+            <span class="badge-text">Years of<br/>Excellence</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="section-label">Our Story</p>
+          <h2 class="section-title">A Legacy of <em>Luxury & Hospitality</em></h2>
+          <div class="gold-line"></div>
+          <p class="about-text">
+            Nestled in the heart of the city, Sandesh Hotel has been the hallmark of exceptional hospitality for over two decades. Our commitment to providing unparalleled luxury and personalized service has made us the preferred destination for discerning travelers from around the world.
+          </p>
+          <p class="about-text">
+            Every detail at Sandesh Hotel is curated with meticulous care — from our elegantly appointed rooms to our award-winning culinary experiences — ensuring that every stay is nothing short of extraordinary.
+          </p>
+          <div class="about-features">
+            <div class="feature-item">
+              <span class="feature-icon">🏆</span>
+              <span class="feature-text">Award Winning Service</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🍽️</span>
+              <span class="feature-text">Fine Dining Restaurant</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">💆</span>
+              <span class="feature-text">World Class Spa</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🏊</span>
+              <span class="feature-text">Infinity Pool</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary" id="aboutContactBtn">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ROOMS SECTION ========== -->
+  <section id="rooms" class="rooms-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Accommodations</p>
+        <h2 class="section-title">Our <em>Exquisite Rooms</em></h2>
+        <div class="gold-line center"></div>
+        <p class="section-desc">Each room is a sanctuary of comfort, designed with the finest materials and adorned with exclusive artwork.</p>
+      </div>
+      <div class="rooms-grid">
+
+        <div class="room-card" id="roomStandard">
+          <div class="room-img-wrap">
+            <img src="room-deluxe.png" alt="Standard Room" />
+            <div class="room-badge">From $120/night</div>
+          </div>
+          <div class="room-info">
+            <div class="room-header">
+              <h3 class="room-name">Standard Room</h3>
+              <div class="room-stars">★★★★★</div>
+            </div>
+            <p class="room-desc">Elegantly furnished with all modern amenities, perfect for the solo traveler or couple.</p>
+            <div class="room-features">
+              <span>🛏 King Bed</span>
+              <span>📶 Free WiFi</span>
+              <span>🛁 En-Suite</span>
+              <span>📺 Smart TV</span>
+            </div>
+            <div class="room-footer">
+              <span class="room-size">32 m²</span>
+              <a href="#booking" class="btn-room" id="bookStandardBtn">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card featured" id="roomSuite">
+          <div class="room-img-wrap">
+            <img src="room-suite.png" alt="Executive Suite" />
+            <div class="room-badge featured-badge">Most Popular</div>
+          </div>
+          <div class="room-info">
+            <div class="room-header">
+              <h3 class="room-name">Executive Suite</h3>
+              <div class="room-stars">★★★★★</div>
+            </div>
+            <p class="room-desc">A spacious retreat featuring a separate living area, panoramic city views, and premium amenities.</p>
+            <div class="room-features">
+              <span>🛏 King Bed</span>
+              <span>🛋 Living Room</span>
+              <span>🍾 Mini Bar</span>
+              <span>🌆 City View</span>
+            </div>
+            <div class="room-footer">
+              <span class="room-size">65 m²</span>
+              <a href="#booking" class="btn-room" id="bookSuiteBtn">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card" id="roomPresidential">
+          <div class="room-img-wrap">
+            <img src="room-suite.png" alt="Presidential Suite" style="object-position: right" />
+            <div class="room-badge">From $580/night</div>
+          </div>
+          <div class="room-info">
+            <div class="room-header">
+              <h3 class="room-name">Presidential Suite</h3>
+              <div class="room-stars">★★★★★</div>
+            </div>
+            <p class="room-desc">The pinnacle of luxury. A private haven with butler service, jacuzzi, and breathtaking views.</p>
+            <div class="room-features">
+              <span>🛏 2 Bedrooms</span>
+              <span>🥂 Butler</span>
+              <span>🛁 Jacuzzi</span>
+              <span>🎯 VIP Access</span>
+            </div>
+            <div class="room-footer">
+              <span class="room-size">120 m²</span>
+              <a href="#booking" class="btn-room" id="bookPresidentialBtn">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AMENITIES SECTION ========== -->
+  <section id="amenities" class="amenities-section">
+    <div class="amenities-bg"></div>
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-label">What We Offer</p>
+        <h2 class="section-title white">World-Class <em>Amenities</em></h2>
+        <div class="gold-line center"></div>
+      </div>
+      <div class="amenities-grid">
+        <div class="amenity-card" id="amenSpa">
+          <div class="amenity-icon">💆‍♀️</div>
+          <h3>Luxury Spa</h3>
+          <p>Rejuvenate your body and soul with our world-class spa treatments and wellness therapies.</p>
+        </div>
+        <div class="amenity-card" id="amenPool">
+          <div class="amenity-icon">🏊‍♂️</div>
+          <h3>Infinity Pool</h3>
+          <p>Swim in our stunning rooftop infinity pool with breathtaking panoramic city views.</p>
+        </div>
+        <div class="amenity-card" id="amenDining">
+          <div class="amenity-icon">🍽️</div>
+          <h3>Fine Dining</h3>
+          <p>Experience culinary excellence at our award-winning restaurant helmed by world-renowned chefs.</p>
+        </div>
+        <div class="amenity-card" id="amenFitness">
+          <div class="amenity-icon">🏋️‍♂️</div>
+          <h3>Fitness Center</h3>
+          <p>State-of-the-art gymnasium equipped with the latest fitness technology and personal trainers.</p>
+        </div>
+        <div class="amenity-card" id="amenConference">
+          <div class="amenity-icon">📊</div>
+          <h3>Conference Halls</h3>
+          <p>Fully equipped conference and banquet facilities for corporate events and grand celebrations.</p>
+        </div>
+        <div class="amenity-card" id="amenConcierge">
+          <div class="amenity-icon">🛎️</div>
+          <h3>24/7 Concierge</h3>
+          <p>Our dedicated concierge team is available around the clock to fulfill your every request.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY SECTION ========== -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Visual Journey</p>
+        <h2 class="section-title">Our <em>Gallery</em></h2>
+        <div class="gold-line center"></div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item large" id="galleryItem1">
+          <img src="room-suite.png" alt="Luxury Suite" />
+          <div class="gallery-overlay"><span>Executive Suite</span></div>
+        </div>
+        <div class="gallery-item" id="galleryItem2">
+          <img src="hotel-pool.png" alt="Pool" />
+          <div class="gallery-overlay"><span>Infinity Pool</span></div>
+        </div>
+        <div class="gallery-item" id="galleryItem3">
+          <img src="hotel-restaurant.png" alt="Restaurant" />
+          <div class="gallery-overlay"><span>Fine Dining</span></div>
+        </div>
+        <div class="gallery-item" id="galleryItem4">
+          <img src="room-deluxe.png" alt="Deluxe Room" />
+          <div class="gallery-overlay"><span>Deluxe Room</span></div>
+        </div>
+        <div class="gallery-item" id="galleryItem5">
+          <img src="hotel-pool.png" alt="Pool Night" style="filter: hue-rotate(30deg) brightness(0.8)" />
+          <div class="gallery-overlay"><span>Evening Lounge</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Guest Reviews</p>
+        <h2 class="section-title">What Our <em>Guests Say</em></h2>
+        <div class="gold-line center"></div>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" id="testimonial1">
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">An absolutely breathtaking experience. The level of service and attention to detail at Sandesh Hotel is unmatched. We felt like royalty throughout our stay.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">R</div>
+            <div class="author-info">
+              <span class="author-name">Rajesh Sharma</span>
+              <span class="author-loc">New Delhi, India</span>
+            </div>
+            <div class="author-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="testimonial2">
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">The Presidential Suite was a dream come true. Impeccable interiors, amazing views, and the butler service was simply extraordinary. Will definitely return.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">S</div>
+            <div class="author-info">
+              <span class="author-name">Sunita Patel</span>
+              <span class="author-loc">Mumbai, India</span>
+            </div>
+            <div class="author-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="testimonial3">
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">From the moment we arrived, we were treated like family. The fine dining experience was world-class and the spa was the highlight of our entire trip.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div class="author-info">
+              <span class="author-name">Amit Koirala</span>
+              <span class="author-loc">Kathmandu, Nepal</span>
+            </div>
+            <div class="author-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="section-title">Contact <em>Us</em></h2>
+        <div class="gold-line center"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item" id="contactAddress">
+            <span class="contact-icon">📍</span>
+            <div>
+              <h4>Address</h4>
+              <p>Sandesh Hotel & Resort<br/>123 Luxury Lane, Kathmandu<br/>Nepal – 44600</p>
+            </div>
+          </div>
+          <div class="contact-item" id="contactPhone">
+            <span class="contact-icon">📞</span>
+            <div>
+              <h4>Phone</h4>
+              <p>+977 1-4567890<br/>+977 9812345678</p>
+            </div>
+          </div>
+          <div class="contact-item" id="contactEmail">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <h4>Email</h4>
+              <p>reservations@sandeshhotel.com<br/>info@sandeshhotel.com</p>
+            </div>
+          </div>
+          <div class="contact-item" id="contactHours">
+            <span class="contact-icon">🕐</span>
+            <div>
+              <h4>Front Desk Hours</h4>
+              <p>Open 24 Hours, 7 Days a Week</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <h3 class="form-title">Send Us a Message</h3>
+          <div class="input-row">
+            <div class="input-group">
+              <input type="text" id="contactName" placeholder="Your Name" required />
+              <label for="contactName">Your Name</label>
+            </div>
+            <div class="input-group">
+              <input type="email" id="contactEmailInput" placeholder="Email Address" required />
+              <label for="contactEmailInput">Email Address</label>
+            </div>
+          </div>
+          <div class="input-group">
+            <input type="text" id="contactSubject" placeholder="Subject" />
+            <label for="contactSubject">Subject</label>
+          </div>
+          <div class="input-group">
+            <textarea id="contactMessage" placeholder="Your Message" rows="5" required></textarea>
+            <label for="contactMessage">Your Message</label>
+          </div>
+          <button type="submit" class="btn-primary" id="contactSubmitBtn">Send Message ✦</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="logo-icon">✦</span>
+              <div class="logo-text">
+                <span class="logo-main">SANDESH</span>
+                <span class="logo-sub">HOTEL & RESORT</span>
+              </div>
+            </div>
+            <p class="footer-desc">Where every moment is crafted into a timeless memory. Experience the pinnacle of luxury hospitality at Sandesh Hotel.</p>
+            <div class="social-links">
+              <a href="#" class="social-link" id="socialFb" aria-label="Facebook">f</a>
+              <a href="#" class="social-link" id="socialIg" aria-label="Instagram">in</a>
+              <a href="#" class="social-link" id="socialTw" aria-label="Twitter">𝕏</a>
+              <a href="#" class="social-link" id="socialYt" aria-label="YouTube">▶</a>
+            </div>
+          </div>
+          <div class="footer-links-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#rooms">Rooms & Suites</a></li>
+              <li><a href="#amenities">Amenities</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">Fine Dining</a></li>
+              <li><a href="#">Spa & Wellness</a></li>
+              <li><a href="#">Event Planning</a></li>
+              <li><a href="#">Airport Transfer</a></li>
+              <li><a href="#">Concierge</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Subscribe to receive exclusive offers and updates.</p>
+            <div class="newsletter-form">
+              <input type="email" id="newsletterEmail" placeholder="Enter your email" />
+              <button id="newsletterBtn" type="button">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Sandesh Hotel & Resort. All Rights Reserved. Crafted with ✦ for Excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== MODAL / TOAST ========== -->
+  <div id="toastMsg" class="toast" aria-live="polite"></div>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
